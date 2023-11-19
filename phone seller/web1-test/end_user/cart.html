@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout_style.css">
+
+    <style>
+        .box-product{
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255,243,237,255);
+            border-style: solid;
+            border-width: 5px;
+            border-color: red;
+            padding:5px;
+            margin-bottom: 10px;
+        }
+        .box-product .box-product-image{
+            width: 30%;
+            height: 100%;
+        }
+        .box-product .box-product-image img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+        .box-product .box-product-description{
+          
+            font-size: 20px;
+        }
+        .box-product .box-product-price{
+            width: 10%;
+        }
+
+        .box-product .box-product-interaction{
+
+        }
+        .box-product .box-product-interaction .interaction .plus{
+            width: 32px;
+            height: 32px;
+        }
+        .box-product .box-product-interaction .interaction .plus img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .box-product .box-product-interaction .interaction .minus{
+            width: 32px;
+            height: 32px;
+        }
+        .box-product .box-product-interaction .interaction .minus img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="brand">
+        
+            <h1 id="header_p">Thegioidienthoai</h1>
+
+        </div>
+
+        <div id="menu_top">
+            <div class="menu_top_element" id="homepage">
+                <a href="index.html">Trang chủ</a>
+            </div>
+            <div class="menu_top_element" id="cart">
+                <a href="cart.html">Giỏ hàng</a>
+            </div>
+            <div class="menu_top_element" id="login">
+                <a href="login.html">Đăng nhập</a>
+            </div>
+            <div class="menu_top_element" id="singout">
+                <a href="singout.html">Đăng xuất</a>
+            </div>
+            <div class="menu_top_element" id="singup">
+                <a href="singup.html">Đăng ký</a>
+            </div>    
+        </div>
+        <div id="search">
+            
+            <div class="menu_top_element" id="simple_search">
+                <form action="" method="get">
+                    <input type="text" placeholder="Tìm theo tên" id="ss" name="ss">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div class="menu_top_element" id="advanced_search">
+                <a href="advanced_search.html">
+                    <img src="assets/advanced_search.png" width="20" height="20">
+                    <p>Tiềm kiếm nâng cao</p>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    
+   
+    </div>
+
+    <div id="main_body">
+        <div id="left_panel">
+            <div id="product_brand">
+                <p>Các loại điện thoại</p>
+            </div>
+            <div class="left_panel_element" id="oppo" onclick="window.location.href = 'oppo.html';">
+                <a href="oppo.html">Oppo</a>
+            </div>
+            <div class="left_panel_element" id="samsung" onclick="window.location.href = 'samsung.html';">
+                <a href="samsung.html">Samsung</a>
+            </div>
+            <div class="left_panel_element" id="iphone" onclick="window.location.href = 'iphone.html';">
+                <a href="iphone.html">iPhone</a>
+            </div>
+        </div>
+        <div id="main_content">
+            <div class="box-product" id="product-1">
+                <div class="box-product-image">
+                    <img src="assets/iphone-15-plus-128gb-xanh-thumb-600x600.jpg">
+                </div>
+                <div class="box-product-description">
+                    Điện thoại iPhone 15 Plus 128GB
+                </div>
+                <div class="box-product-price">
+                    25.990.000₫
+                </div>
+                <div class="box-product-interaction">
+                    <div class="interaction">
+                        <button class="plus" >
+                           <img src="assets/plus-icon.png">
+                        </button>
+                        <input class="true-value" type="text" id="number-of-product" value="1">
+                        <button class="minus">
+                            <img src="assets/minus-icon.png"
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-product" id="product-2">
+                <div class="box-product-image">
+                    <img src="assets/samsung-galaxy-a05-thumb-600x600.jpg">
+                </div>
+                <div class="box-product-description">
+                    Samsung Galaxy A05 4GB
+                </div>
+                <div class="box-product-price">
+                    3.090.000₫
+                </div>
+                <div class="box-product-interaction">
+                    <div class="interaction">
+                        <button class="plus" >
+                           <img src="assets/plus-icon.png">
+                        </button>
+                        <input class="true-value" type="text" id="number-of-product" value="1">
+                        <button class="minus">
+                            <img src="assets/minus-icon.png"
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-product" id="product-3">
+                <div class="box-product-image">
+                    <img src="assets/oppo-a57-xanh-thumb-1-600x600.jpeg">
+                </div>
+                <div class="box-product-description">
+                    Điện thoại OPPO Reno10 5G 128GB
+                </div>
+                <div class="box-product-price">
+                    9.490.000₫
+                </div>
+                <div class="box-product-interaction">
+                    <div class="interaction">
+                        <button class="plus" >
+                           <img src="assets/plus-icon.png">
+                        </button>
+                        <input class="true-value" type="text" id="number-of-product" value="1">
+                        <button class="minus">
+                            <img src="assets/minus-icon.png"
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <div id="right_panel">
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer_container">
+            <p style="color: rgba(255,255,255,255);">
+                <strong style="color:#308d46;">Tổng đài hỗ trợ</strong> (Miễn phí gọi)
+            </p>
+            <p style="color: rgba(255,255,255,255);">
+                <span style="color:#308d46;">Khiếu nại:</span> 1800.1062
+                (8:00 - 21:30)
+            </p>
+            <p style="color: rgba(255,255,255,255);">
+                <span style="color:#308d46;">Bảo hành:</span> 1800.1064
+                (8:00 - 21:00)
+            </p>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>
