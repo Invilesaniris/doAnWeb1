@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout_style.css">
+
+    <style>
+        #Order-history{
+            background-color: aliceblue;
+        }
+        #Order-history .history-box{
+            background-color: rgba(238,238,238,255);
+            border-style: solid;
+            border-width: 1px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="brand">
+        
+            <h1 id="header_p">Thegioidienthoai</h1>
+
+        </div>
+
+        <div id="menu_top">
+            <div class="menu_top_element" id="homepage">
+                <a href="index.html">Trang chủ</a>
+            </div>
+            <div class="menu_top_element" id="cart">
+                <a href="cart.html">Giỏ hàng</a>
+            </div>
+            <div class="menu_top_element" id="login">
+                <a href="login.html">Đăng nhập</a>
+            </div>
+            <div class="menu_top_element" id="singout">
+                <a href="singout.html">Đăng xuất</a>
+            </div>
+            <div class="menu_top_element" id="singup">
+                <a href="singup.html">Đăng ký</a>
+            </div>    
+            <div class="menu_top_element" id="history">
+                <a href="history.html">Lịch sử mua hàng</a>
+            </div>
+        </div>
+        <div id="search">
+            
+            <div class="menu_top_element" id="simple_search">
+                <form action="" method="get">
+                    <input type="text" placeholder="Tìm theo tên" id="ss" name="ss">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div class="menu_top_element" id="advanced_search">
+                <a href="advanced_search.html">
+                    <img src="assets/advanced_search.png" width="20" height="20">
+                    <p>Tiềm kiếm nâng cao</p>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    
+   
+    </div>
+
+    <div id="main_body">
+        <div id="left_panel">
+            <div id="product_brand">
+                <p>Các loại điện thoại</p>
+            </div>
+            <div class="left_panel_element" id="oppo" onclick="window.location.href = 'oppo.html';">
+                <a href="oppo.html">Oppo</a>
+            </div>
+            <div class="left_panel_element" id="samsung" onclick="window.location.href = 'samsung.html';">
+                <a href="samsung.html">Samsung</a>
+            </div>
+            <div class="left_panel_element" id="iphone" onclick="window.location.href = 'iphone.html';">
+                <a href="iphone.html">iPhone</a>
+            </div>
+        </div>
+        <div id="main_content">
+            
+            <div id="Order-history">
+                <div class="history-box" id="order1">
+                    <p>Ngày đặt hàng: 22/12/2022</p>
+                    <p>Tình trạng đặt hàng: Đang giao</p>
+                    <p>Giá đặt hàng:46.990.000₫</p>
+                </div>
+                <div class="history-box" id="order4">
+                    <p>Ngày đặt hàng: 12/5/2022</p>
+                    <p>Tình trạng đặt hàng: Hủy</p>
+                    <p>Giá đặt hàng:25.990.000₫</p>
+                </div>
+                <div class="history-box" id="order3">
+                    <p>Ngày đặt hàng: 22/2/2022</p>
+                    <p>Tình trạng đặt hàng: Hủy</p>
+                    <p>Giá đặt hàng:33.990.000₫</p>
+                </div>
+                <div class="history-box" id="order2">
+                    <p>Ngày đặt hàng: 22/1/2022</p>
+                    <p>Tình trạng đặt hàng: Đã giao</p>
+                    <p>Giá đặt hàng:9.490.000₫</p>
+                </div>
+               
+                
+            </div>
+            
+        </div>
+        <div id="right_panel">
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer_container">
+            <p style="color: rgba(255,255,255,255);">
+                <strong style="color:#308d46;">Tổng đài hỗ trợ</strong> (Miễn phí gọi)
+            </p>
+            <p style="color: rgba(255,255,255,255);">
+                <span style="color:#308d46;">Khiếu nại:</span> 1800.1062
+                (8:00 - 21:30)
+            </p>
+            <p style="color: rgba(255,255,255,255);">
+                <span style="color:#308d46;">Bảo hành:</span> 1800.1064
+                (8:00 - 21:00)
+            </p>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>
