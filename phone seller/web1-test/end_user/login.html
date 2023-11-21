@@ -52,6 +52,9 @@
             cursor:pointer;
         }
     </style>
+    <script>
+
+    </script>
 </head>
 <body>
     <div id="header">
@@ -81,6 +84,7 @@
                 <a href="history.html">Lịch sử mua hàng</a>
             </div>
         </div>
+
         <div id="search">
             
             <div class="menu_top_element" id="simple_search">
@@ -130,15 +134,15 @@
                         <input type="text" id="username" name="username" placeholder="Email/Số điện thoại/Tên đăng nhập">
                     </form>
                 </div>
-                <div class="password">
+                <div class="password" >
                     <form action="" method="get">
                         <input type="password" id="password" name="password" placeholder="Mật khẩu">
                     </form>
                 </div>
 
                 <div class="submit">
-                    <form action="" method="get">
-                        <input type="submit" id="submit" name="submit" value="Đăng nhập">
+                    <form action="" method="get" onsubmit="setisLoginTrue(this)" target="_blank">
+                        <input type="submit" id="submit" name="submit" value="Đăng nhập" >
                     </form>
                 </div>
 
@@ -167,6 +171,6 @@
         </div>
     </div>
 
-
+    <script src="layout_skeletion_js.js"></script>
 </body>
 </html>

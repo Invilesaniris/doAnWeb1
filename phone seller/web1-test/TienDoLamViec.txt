@@ -1,6 +1,5 @@
 Undone
 -Tìm kiếm (kết quả tìm kiếm có phân trang) 
-- Đăng nhập / đăng xuất 
 -order trong history.html
 -toàn bộ trang admin:
 +
