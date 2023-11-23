@@ -81,17 +81,17 @@
             <div class="left_panel_element" id="login">
                 <a href="login.html">Đăng nhập</a>
             </div>
-            <div class="left_panel_element" id="UserManage">
-                <a href="UserManage.html">Quản lý người dùng</a>
+            <div class="left_panel_element" id="singout">
+                <a href="signout.html">Đăng xuất</a>
+            </div>
+            <div class="left_panel_element" id="addUser">
+                <a href="UserManage.html">Thêm người dùng</a>
             </div>
             <div class="left_panel_element" id="addProduct">
                 <a href="addProduct.html">Thêm sản phẩm</a>
             </div>
             <div class="left_panel_element" id="modifyProduct">
-                <a href="modifyProduct.html">Sửa sản phẩm</a>
-            </div>
-            <div class="left_panel_element" id="deleteProduct">
-                <a href="deleteProduct.html">Xóa sản phẩm</a>
+                <a href="modifyProduct.html">Chỉnh sửa sản phẩm</a>
             </div>
             <div class="left_panel_element" id="orderManage">
                 <a href="orderManage.html">Quản lý đơn hàng của khách</a>
@@ -99,7 +99,11 @@
             <div class="left_panel_element" id="financeStatistic">
                 <a href="financeStatistic.html">Thống kê tình hình kinh doanh</a>
             </div>
+            <div class="left_panel_element" id="modifyUser">
+                <a href="financeStatistic.html">Chỉnh sửa tài khoản người dùng</a>
+            </div>
         </div>
+
         <div id="main_content">
             <div class="box-login">
                 <div class="login-title">
@@ -117,7 +121,7 @@
                 </div>
 
                 <div class="submit">
-                    <form action="" method="get">
+                    <form action="" method="get" onsubmit="setisLoginTrue()" target="_blank">
                         <input type="submit" id="submit" name="submit" value="Đăng nhập">
                     </form>
                 </div>
@@ -147,6 +151,9 @@
         </div>
     </div>
 
-
+    <script src="layout_skeketon_js.js"></script>
+    <scrip>
+        alert("Đăng nhập thành công");
+    </scrip>
 </body>
 </html>

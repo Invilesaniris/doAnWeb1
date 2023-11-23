@@ -16,10 +16,12 @@ console.log(key);
 function setisLoginTrue(currentTag){
     sessionStorage.setItem("loginState", "true");
     console.log("return to index");
+    alert("Đăng nhập thành công");
     window.location="index.html"; 
 }
 function setisLoginFalse(currentTag){
-    sessionStorage.setItem("loginState", "false");
+    sessionStorage.setItem("loginState", "false");;
+    alert("Đăng xuất thành công");
     window.location="index.html"; 
 }
 
