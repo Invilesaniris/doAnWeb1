@@ -44,3 +44,15 @@ else{
     login.style.display="inline";
     singout.style.display="none";
 }
+
+//change the submit to tim in simple search
+let simple_search=document.getElementById("simple_search");
+let simple_search_form=(simple_search.getElementsByTagName("form"))[0];
+let inputSubmit=(simple_search_form.getElementsByTagName("input"))[1];
+inputSubmit.value="Tìm";
+
+//change advance search image to "tim kiem nang cao"
+let advanced_search=document.getElementById("advanced_search");
+let advanced_search_button=(advanced_search.getElementsByTagName("a"))[0];
+let advanced_search_button_img=(advanced_search_button.getElementsByTagName("img"))[0];
+console.log(advanced_search_button_img);
