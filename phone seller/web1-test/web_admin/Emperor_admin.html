@@ -5,24 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="layout_style.css">
-    <link rel="stylesheet" href="modify_layout.css">
+    <link rel="stylesheet" href="account_layout.css">
 
     <style>
-        #avatarFrom{
-            height: 100%;
-            width: 100%;
-        }
-        #avatarFrom #avatar-real-value{
-            height: 100%;
-            width: 100%;
-            background-color:chartreuse;
-        }
-        #avatarFrom #avatar-real-value:hover{
-            height: 100%;
-            width: 100%;
-            background-color:aqua;
-            cursor: pointer;
-        }
+        
     </style>
 </head>
 <body>
@@ -77,70 +63,63 @@
             <div id="user-info_box">
                 <div class="user-info-box-element" id="genernal-info">
                     <div id="avatar">
-                        <form id="avatarFrom">
-                            <label for="avatar-real-value">Chọn avatar</label>
-                            <input id="avatar-real-value" name="avatar-real-value" type="file">
-                        </form>
+                        <img src="assets/emperor.jpeg">
                     </div>
                     <div id="basic-info">
-                        <form id="genernal-info-input">
-                            <textarea id="general-info-real=value" name="general-info-real=value">
-                            
-                            </textarea>
-                        </form>
+                        <p id="p1">Torquemada</p>
+                        <p id="p2">Forimperium@gmail.com</p>
+                        <p id="p3">Tình trạng: Không thể bị khóa</p>
                     </div>
                 </div>
                 <div class="user-info-box-element" id="detail-info">
-                    <form id="detail-info-form">
-                        <div id="Account">
-                            Account
-                        </div>
-                        <div id="UserName-title">
-                            Nick name
-                        </div>
-                        <div id="UserName" class="real-value">
-                            <input id="UserName" name="UserName" type="text" value="">
-                        </div>
-                        <div id="Email-title">
-                            Email
-                        </div>
-                        <div id="Email" class="real-value">
-                            <input id="Email" name="Email" type="text" value="">
-                           
-                        </div>
-                        <div id="FullName-title">
-                            Tên đầy đủ
-                        </div>
-                        <div id="FullName" class="real-value">
-                            <input id="FullName" name="FullName" type="text" value="">
-                            
-                        </div>
-                        <div id="Role-title">
-                            Chức vụ
-                        </div>
-                        <div id="Role" class="real-value">
-                            <input id="Role" name="Role" type="text" value="">
-                           
-                        </div>
-                        <div id="Phone-title">
-                            Số điện thoại
-                        </div>
-                        <div id="Phone" class="real-value">
-                            <input id="Phone" name="Phone" type="text" value="">
-                            
-                        </div>
-                    
-                    </form>
+                    <div id="Account">
+                        Account
+                    </div>
+                    <div id="UserName-title">
+                        Nick name
+                    </div>
+                    <div id="UserName" class="real-value">
+                        The Omnissiah
+                    </div>
+                    <div id="Email-title">
+                        Email
+                    </div>
+                    <div id="Email" class="real-value">
+                        Forimperium@gmail.com
+                    </div>
+                    <div id="FullName-title">
+                        Tên đầy đủ
+                    </div>
+                    <div id="FullName" class="real-value">
+                        Torquemada 
+                    </div>
+                    <div id="Role-title">
+                        Chức vụ
+                    </div>
+                    <div id="Role" class="real-value">
+                        Quản trị viên
+                    </div>
+                    <div id="Phone-title">
+                        Số điện thoại
+                    </div>
+                    <div id="Phone" class="real-value">
+                        0311108888
+                    </div>
                 </div>
             </div>
 
             
         </div>
         <div id="right_panel">
-            <div class="right_panel_element" id="Sumbit-all-button">
-                <a onclick="SubmitAll(this)">SUBMIT</a>
+            <div class="right_panel_element" id="Lock">
+                <a onclick="LockUser(this)">Khóa người dùng</a>
             </div>
-            
+            <div class="right_panel_element" id="Modify">
+                <a href="Emperor_modify.html">Chỉnh sửa thông tin</a>
+            </div>
+            <div class="right_panel_element" id="UnLock">
+                <a onclick="UnlockUser(this)" >Khóa người dùng</a>
+            </div>
         </div>
     </div>
 
@@ -163,7 +142,7 @@
 
 
     <script src="layout_skeketon_js.js"></script>
-    <script src="modify_layout_js.js"></script>
+    <script src="user_accountJS.js"></script>
 
 </body>
 </html>
