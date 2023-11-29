@@ -5,58 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="layout_style.css">
+    <link rel="stylesheet" href="account_layout.css">
 
     <style>
-        #main_content{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .box-login{
-            width: 50%;
-            height: 250px;
-            text-align: center;
 
-            background-color: rgba(255,255,255,255);
-            border-style: solid;
-            border-width: 1px;
-
-            box-sizing: border-box;
-
-            
-        }
-        .box-login .login-title{
-            font-size: 20px;
-            font-weight:bolder;
-            margin-bottom: 30px;
-
-            
-        }
-        .box-login div{
-            margin-bottom: 20px;
-            width: 100%;
-        }
-        .box-login .username form input{
-            width: 95%;
-            height: 30px;
-        }
-        .box-login .password form input{
-            width: 95%;
-            height: 30px;
-        }
-        .box-login .submit form input{
-       
-            width: 100%;
-            height: 30px;
-            background-color: rgba(243,130,108,255);
-            cursor:pointer;
-        }
     </style>
-    <script>
-
-    </script>
+   
 </head>
 <body>
+
     <div id="header">
         <div id="brand">
         
@@ -75,7 +32,7 @@
                 <a href="login.html">Đăng nhập</a>
             </div>
             <div class="menu_top_element" id="singout">
-                <a href="singout.html">Đăng xuất</a>
+                <a href="index.html">Đăng xuất</a>
             </div>
             <div class="menu_top_element" id="singup">
                 <a href="singup.html">Đăng ký</a>
@@ -125,28 +82,54 @@
             </div>
         </div>
         <div id="main_content">
-            <div class="box-login">
-                <div class="login-title">
-                    Đăng nhập
+            <div id="user-info_box">
+                <div class="user-info-box-element" id="genernal-info">
+                    <div id="avatar">
+                        <img src="assets/guillimanfinal.jpg">
+                    </div>
+                    <div id="basic-info">
+                        <p id="p1">Roboute Guilliman </p>
+                        <p id="p2">Guilliman@gmail.com</p>
+                        <p id="p3">Tình trạng: Không bị khóa</p>
+                    </div>
                 </div>
-                <div class="username">
-                    <form action="" method="get">
-                        <input type="text" id="username" name="username" placeholder="Email/Số điện thoại/Tên đăng nhập">
-                    </form>
+                <div class="user-info-box-element" id="detail-info">
+                    <div id="Account">
+                        Account
+                    </div>
+                    <div id="UserName-title">
+                        Nick name
+                    </div>
+                    <div id="UserName" class="real-value">
+                        The G man
+                    </div>
+                    <div id="Email-title">
+                        Email
+                    </div>
+                    <div id="Email" class="real-value">
+                        Guilliman@gmail.com
+                    </div>
+                    <div id="FullName-title">
+                        Tên đầy đủ
+                    </div>
+                    <div id="FullName" class="real-value">
+                        Roboute Guilliman 
+                    </div>
+                    <div id="Role-title">
+                        Chức vụ
+                    </div>
+                    <div id="Role" class="real-value">
+                        Khách hàng
+                    </div>
+                    <div id="Phone-title">
+                        Số điện thoại
+                    </div>
+                    <div id="Phone" class="real-value">
+                        0311102412
+                    </div>
                 </div>
-                <div class="password" >
-                    <form action="" method="get">
-                        <input type="password" id="password" name="password" placeholder="Mật khẩu">
-                    </form>
-                </div>
-
-                <div class="submit">
-                    <form action="" method="get" onsubmit="setisLoginTrue(this)" target="_blank">
-                        <input type="submit" id="submit" name="submit" value="Đăng nhập" >
-                    </form>
-                </div>
-
             </div>
+
 
             
         </div>
@@ -170,8 +153,9 @@
             
         </div>
     </div>
-    
 
+
+    
     <script src="layout_skeletion_js.js"></script>
 </body>
 </html>

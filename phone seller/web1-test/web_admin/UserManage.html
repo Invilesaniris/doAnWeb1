@@ -26,6 +26,13 @@
             background-color:aqua;
             cursor: pointer;
         }
+        
+        #right_panel #add-all-button{
+            background-color: green;
+        }
+        #right_panel #add-all-button:hover{
+            background-color: red;
+        }
     </style>
 </head>
 <body>
@@ -140,8 +147,8 @@
             
         </div>
         <div id="right_panel">
-            <div class="right_panel_element" id="Sumbit-all-button">
-                <a onclick="SubmitAll(this)">SUBMIT</a>
+            <div class="right_panel_element" id="add-all-button">
+                <a onclick="AddUser(this)">Thêm</a>
             </div>
             
         </div>
@@ -167,6 +174,11 @@
 
     <script src="layout_skeketon_js.js"></script>
     <script src="modify_layout_js.js"></script>
+    <script>
+        function AddUser(user){
+            alert("Thêm người dùng thành công");
+        }
+    </script>
 
 </body>
 </html>

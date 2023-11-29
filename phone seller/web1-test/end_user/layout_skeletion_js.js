@@ -17,6 +17,10 @@ function setisLoginTrue(currentTag){
     sessionStorage.setItem("loginState", "true");
     console.log("return to index");
     alert("Đăng nhập thành công");
+
+    let userAccount=
+
+
     window.location="index.html"; 
 }
 function setisLoginFalse(currentTag){
@@ -24,29 +28,16 @@ function setisLoginFalse(currentTag){
     alert("Đăng xuất thành công");
     window.location="index.html"; 
 }
-
-let singout=document.getElementById("singout");
-let login=document.getElementById("login");
-let isLogin=sessionStorage.getItem("loginState");
-console.log("isLogin:"+isLogin);
-if(isLogin===null){
-    isLogin="false";
-    sessionStorage.setItem("loginState", isLogin);
+function muaHang(){
+    alert("Đặt hàng thành công");
 }
 
-if(isLogin==="true"){
-    console.log("login is hidden");
-    login.style.display="none";
-    singout.style.display="inline";
-}
-else{
-    console.log("signout is hidden");
-    login.style.display="inline";
-    singout.style.display="none";
-}
+
+
 
 //change the submit to tim in simple search
 let simple_search=document.getElementById("simple_search");
+
 let simple_search_form=(simple_search.getElementsByTagName("form"))[0];
 let inputSubmit=(simple_search_form.getElementsByTagName("input"))[1];
 inputSubmit.value="Tìm";
@@ -77,10 +68,45 @@ simple_search_form.setAttribute("target","_blank");
 
 //change submit to "tim" of advanced search + add onclick action to simple search "tim" button
 let advanced_search_form=document.getElementById("item1");
-let advanced_submit_button=advanced_search_form.lastElementChild;
-advanced_submit_button.value="Tìm";
-advanced_submit_button.setAttribute("onclick","window.location.replace('search_result.html')");
-advanced_search_form.setAttribute("target","_blank");
+if(advanced_search_form!=null)
+{
+    let advanced_submit_button=advanced_search_form.lastElementChild;
+    advanced_submit_button.value="Tìm";
+    advanced_submit_button.setAttribute("onclick","window.location.replace('search_result.html')");
+    advanced_search_form.setAttribute("target","_blank");
+}
+
+//add onlick to "mua hang" button
+
+
+let form_address=document.getElementById("form_address");
+if(form_address!=null)
+{
+    let form_address_submit=form_address.lastElementChild;
+    form_address_submit.setAttribute("onclick", "muaHang()");
+}
+
+
+
+//add image to indicate user account
+let image=document.createElement("img");
+image.setAttribute("src","assets/robute_drinking.jpeg");
+let a_image=document.createElement("a");
+a_image.append(image);
+let div_a_image=document.createElement("div");
+div_a_image.setAttribute("class","menu_top_element");
+div_a_image.setAttribute("id","avatar-account");
+div_a_image.append(a_image);
+menu_top=document.getElementById("menu_top");
+menu_top.append(div_a_image);
+
+image.style.width="33.48px";
+image.style.height="37.6px";
+image.style.objectFit="cover";
+image.style.borderStyle="hidden";
+image.style.borderRadius="50%";
+
+a_image.setAttribute("href","robute_user.html");
 
 
 
@@ -91,9 +117,29 @@ advanced_search_form.setAttribute("target","_blank");
 
 
 
+//actions when user log in and log out
 
+let singout=document.getElementById("singout");
+let login=document.getElementById("login");
+let isLogin=sessionStorage.getItem("loginState");
+console.log("isLogin:"+isLogin);
+if(isLogin===null){
+    isLogin="false";
+    sessionStorage.setItem("loginState", isLogin);
+}
 
-
+if(isLogin==="true"){
+    console.log("login is hidden");
+    login.style.display="none";
+    singout.style.display="inline";
+    div_a_image.style.display="inline";
+}
+else{
+    console.log("signout is hidden");
+    login.style.display="inline";
+    singout.style.display="none";
+    div_a_image.style.display="none";
+}
 
 
 
