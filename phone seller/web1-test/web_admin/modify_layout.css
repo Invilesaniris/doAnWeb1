@@ -25,7 +25,6 @@
     width: 100%;
     height: 100%;
     padding-left: 5%;
-    background-color: rgba(244,235,235,255);
     
 }
 #basic-info p{
@@ -130,9 +129,10 @@
 /************************** ********************************************** **********************/
 
 #genernal-info-input{
+    
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 #basic-info textarea{
     box-sizing: border-box;
