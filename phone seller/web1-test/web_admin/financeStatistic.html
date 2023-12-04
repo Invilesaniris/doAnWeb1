@@ -98,13 +98,13 @@
                     <select name="product-type" id="product-type">
                         <option value="oppo">Oppo</option>
                         <option value="samsung">Samsung</option>
-                        <option value="iphone">Iphone</option>
+                        <option value="Iphone">Iphone</option>
                     </select>
                 </form>
-                <button type="button" id="submit-search" onclick="SubmitSearch()">Tìm</button>
+                <button type="button" id="submit-search" onclick="SubmitSearch(),display(value)">Tìm</button>
             </div>
             <div id="search-result">
-                <h1>Loại sản phẩm: Iphone</h1>
+                <h1 id="loai_san_pham">Loại sản phẩm: Iphone</h1>
                 <p>Số lượng bán ra: 0</p>
                 <p>Doanh thu: 0đ</p>
                 <h3>Đơn hàng đang giao:</h3>
