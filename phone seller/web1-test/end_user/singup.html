@@ -139,7 +139,7 @@
                 </div>
 
                 <div class="box-itme" id="submit">
-                    <form action="" method="get">
+                    <form action="" method="get" onsubmit="announment()" target="_blank">
                         <input type="submit" id="submit" name="submit" value="Đăng ký">
                     </form>
                 </div>
@@ -170,5 +170,11 @@
     </div>
 
     <script src="layout_skeletion_js.js"></script>
+    <script>
+        function announment(){
+            alert("bạn đã đăng kí thành công");
+            window.location.href = "index.html";
+        }
+    </script>
 </body>
 </html>
