@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout_style.css">
+    <link rel="stylesheet" href="product_detail_style.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="brand">
+            <h1 id="header_p">Thegioidienthoai Admin Interface</h1>
+        </div>
+        <div id="menu_top">   
+        </div>
+
+        <div id="search">
+        </div>
+        
+    </div>
+
+
+   
+    </div>
+
+    <div id="main_body">
+        <div id="left_panel">
+            <div class="left_panel_element" id="homepage">
+                <a href="index.html">Giao diện admin</a>
+            </div>
+            <div class="left_panel_element" id="login">
+                <a href="login.html">Đăng nhập</a>
+            </div>
+            <div class="left_panel_element" id="singout">
+                <a href="signout.html">Đăng xuất</a>
+            </div>
+            <div class="left_panel_element" id="addUser">
+                <a href="UserManage.html">Thêm người dùng</a>
+            </div>
+            <div class="left_panel_element" id="addProduct">
+                <a href="addProduct.html">Thêm sản phẩm</a>
+            </div>
+            <div class="left_panel_element" id="modifyProduct">
+                <a href="modifyProduct.html">Chỉnh sửa sản phẩm</a>
+            </div>
+            <div class="left_panel_element" id="orderManage">
+                <a href="orderManage.html">Quản lý đơn hàng của khách</a>
+            </div>
+            <div class="left_panel_element" id="financeStatistic">
+                <a href="financeStatistic.html">Thống kê tình hình kinh doanh</a>
+            </div>
+            <div class="left_panel_element" id="modifyUser">
+                <a href="financeStatistic.html">Chỉnh sửa tài khoản người dùng</a>
+            </div>
+        </div>
+        <div id="main_content">
+            <div class="product_name">
+                <div class="box-product-name" >
+                    <h1>Nhập tên sản phẩm</h1>
+                    <form id="formName">
+                        <input type="text" name="ProductName" id="ProductName" >
+                    </form>
+                </div>
+            </div>
+            <div class="box-product-info">
+                <div class="box-product-info-left">
+                    <div class="box-gallery">
+                        <p>Thêm hình ảnh sản phẩm</p>
+                        <form id="formImage">
+                            <input type="file" id="ProductImage" name="ProductImage">
+                        </form>
+                    </div>
+                    <div class="box-detail-info">
+                        <div class="box-title">
+                            <p>Thêm thông tin sản phẩm</p>
+                            <form id="formProductInfo">
+                                <textarea id="ProductInfo" name="ProductInfo" rows="10" cols="58"></textarea>
+                            </form>
+                        </div>
+                        <div id="box-type">
+                            <form id="box-type-form">
+                                <label for="type">Chọn loại cho sản phẩm</label>
+                                <select id="type" name="phone-type">
+                                    <option value="oppo">Oppo</option>
+                                    <option value="iphone">Iphone</option>
+                                    <option value="samsung">Samsung</option>
+                                </select>
+                            </form>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="box-product-info-middle">
+
+                </div>
+                <div class="box-product-info-right">
+                    <div class="price">
+                        <p>Thêm giá tiền</p>
+                        <form id="formPrice">
+                            <input type="number" id="ProductPrice" name="ProductPrice">
+                        </form>
+                    </div>
+                    <div class="box-promotion">
+                        <div class="title">
+                            <p>Thêm thông tin khuyến mãi</p>
+                        </div>
+                        <div class="promotion-promotion-info">
+                            <form id="formPromotion">
+                                <textarea name="ProductPromotion" id="ProductPromotion" cols="17" rows="20"></textarea>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="add-to-cart">
+                        <button type="button" onclick="addProduct(this)">
+                            Đăng
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <div id="right_panel">
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer_container">
+            <p style="color: rgba(255,255,255,255);">
+                <strong style="color:#308d46;">Tổng đài hỗ trợ</strong> (Miễn phí gọi)
+            </p>
+            <p style="color: rgba(255,255,255,255);">
+                <span style="color:#308d46;">Khiếu nại:</span> 1800.1062
+                (8:00 - 21:30)
+            </p>
+            <p style="color: rgba(255,255,255,255);">
+                <span style="color:#308d46;">Bảo hành:</span> 1800.1064
+                (8:00 - 21:00)
+            </p>
+            
+        </div>
+    </div>
+
+
+    <script src="layout_skeketon_js.js"></script>
+    <script>
+        function addProduct(product){
+            alert("Thêm sản phẩm thành công");
+        }
+    </script>
+
+</body>
+</html>

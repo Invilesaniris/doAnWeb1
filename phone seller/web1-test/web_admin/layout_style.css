@@ -47,7 +47,9 @@ a{
 }
 
 
-
+#main_content{
+    box-sizing: border-box;
+}
 #main_body{
     display: flex;
 }
