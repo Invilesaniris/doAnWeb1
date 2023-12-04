@@ -142,8 +142,9 @@ else{
 }
 
 //add alert to "them vao gio hang" button
-let addToCartButton=document.getElementsByClassName("add-to-cart")[0].getElementsByTagName("button")[0];
-if(addToCartButton!==null){
+let addToCartButton=document.getElementsByClassName("add-to-cart");
+if(addToCartButton.length!==0){
+    addToCartButton=addToCartButton[0].getElementsByTagName("button")[0];
     addToCartButton.setAttribute("onclick","alert('Đã thêm sản phẩm vào giỏ hàng')")
 }
 
